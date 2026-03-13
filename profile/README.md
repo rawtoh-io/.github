@@ -1,6 +1,6 @@
-# Rawtoh
+# [Rawtoh](https://www.rawtoh.io/)
 
-**Rawtoh** is a real-time automation platform that connects your favorite streaming tools together. Create automations that react to events from Twitch, OBS, and more — all from a single place.
+**[Rawtoh](https://www.rawtoh.io/)** is a real-time automation platform that connects your favorite streaming tools together. Create automations that react to events from Twitch, OBS, and more — all from a single place.
 
 ## How it works
 
