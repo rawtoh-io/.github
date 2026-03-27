@@ -1,32 +1,27 @@
 <a href="https://www.rawtoh.io/"><img src="../logo.svg" alt="Rawtoh" width="120"></a>
 
-**[Rawtoh](https://www.rawtoh.io/)** is a real-time automation platform that connects your favorite streaming tools
-together. Create automations that react to events from Twitch, OBS, and more — all from a single place.
+**[Rawtoh](https://www.rawtoh.io/)** is a real-time automation platform. Connect your favorite services, react to
+events, and trigger actions — all from a single place.
 
 ## How it works
 
-Rawtoh acts as a central hub between your services. When something happens on one platform (a new subscriber on Twitch,
-a scene change in OBS, etc.), Rawtoh picks it up and can trigger actions on any connected service.
+Rawtoh acts as a central hub between your services. When something happens on one platform (a new message on Twitch, a
+scene change in OBS, etc.), Rawtoh picks it up and runs the automation you defined.
 
 ```
-Twitch  ─┐                  ┌─ Change OBS scene
-OBS     ─┤──  Rawtoh Hub  ──┤─ Send a chat message
-...     ─┘                  └─ Any JavaScript you write
+Twitch, OBS, …  ──→  Rawtoh  ──→  Your automations (JavaScript)
 ```
-
-Connect your services, define your triggers and actions in JavaScript, and let Rawtoh handle the rest.
 
 ## Modules
 
-Rawtoh is built around **modules** — lightweight connectors that bridge external services to the platform:
+Rawtoh is built around **modules** — connectors that bridge external services to the platform:
 
-| Module                | Description                                                        |
-|-----------------------|--------------------------------------------------------------------|
-| **module-bun-twitch** | Chat, events, and moderation via the Twitch API                    |
-| **module-bun-obs**    | Full control of OBS Studio (scenes, sources, streaming, recording) |
+- Connect any service: Twitch, OBS, Discord, and more
+- React to events in real time
+- Call module functions directly from your automation scripts
+- Self-hosted: run modules wherever you want
 
-Modules are **open source** — you can self-host them, customize them, or use them as a reference to build your own. The
-core platform itself is closed source.
+Modules are **open source** — you can self-host them, customize them, or build your own.
 
 ## Get started
 
