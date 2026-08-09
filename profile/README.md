@@ -1,28 +1,39 @@
 <a href="https://www.rawtoh.io/"><img src="../logo.svg" alt="Rawtoh" width="120"></a>
 
-**[Rawtoh](https://www.rawtoh.io/)** is a real-time automation platform. Connect your favorite services, react to
-events, and trigger actions — all from a single place.
+**[Rawtoh](https://www.rawtoh.io/)** is the collaborative control room for live streams. Connect your stack, script your
+automations, and hand your crew a shared board they can operate from any device.
+
+## One stream. Every hand on deck.
+
+While you stream, your mods co-pilot from a shared **Board** — switching OBS scenes, triggering alerts, launching
+giveaways from their phone, tablet or laptop. Everyone sees the same live state, and everyone acts within the role you
+gave them.
 
 ## How it works
 
-Rawtoh acts as a central hub between your services. When something happens on one platform (a new message on Twitch, a
-scene change in OBS, etc.), Rawtoh picks it up and runs the automation you defined.
+Rawtoh sits between your services. When something happens on one of them — a new subscriber on Twitch, a scene change in
+OBS, a mod tapping a button on the Board — Rawtoh picks it up and runs the automation you defined. Automations are
+TypeScript, they run server-side, and they keep working even when you are offline.
 
 ```
-Twitch, OBS, …  ──→  Rawtoh  ──→  Your automations (JavaScript)
+Twitch, OBS, Board, …  ──→  Rawtoh  ──→  Your automations (TypeScript)  ──→  Actions, across every connected service
 ```
 
 ## Modules
 
-Rawtoh is built around **modules** — connectors that bridge external services to the platform:
+Modules are the connectors that bridge external services to the platform:
 
-- Connect any service: Twitch, OBS, Discord, and more
-- React to events in real time
-- Call module functions directly from your automation scripts
-- Self-hosted: run modules wherever you want
+| Module                                               | What it covers                                                                                 |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Twitch](https://github.com/rawtoh-io/module-twitch) | Chat, subs, raids, bits, channel points, polls, predictions — 41 events and 50 actions          |
+| [OBS](https://github.com/rawtoh-io/module-obs)       | Scenes, sources, audio, streaming, recording, filters, transitions — 54 events and 127 actions  |
+| [Board](https://github.com/rawtoh-io/module-board)   | The shared control panel your crew operates — custom buttons, live state, role-based access     |
 
-Modules are **open source** — you can self-host them, customize them, or build your own.
+Modules are **open source** — self-host them, customize them, or
+[build your own](https://www.rawtoh.io/docs/modules/create-your-own).
 
 ## Get started
 
-Head over to **[rawtoh.io](https://www.rawtoh.io/)** to try it out.
+- **[rawtoh.io](https://www.rawtoh.io/)** — spin up your board and invite your mods, free to start
+- **[Documentation](https://www.rawtoh.io/docs/getting-started)** — core concepts, scripting, storage, modules
+- **[Discord](https://discord.gg/u7hywMkBah)** — ask questions and share what you built
